@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mabeba Tech-Solutions</title>
-    <link rel="stylesheet" href="Tech-solutions.css">
-    <script src="Tech-solutions.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+    <meta name="description" content="Mabeba Tech-Solutions offers web development, mobile apps, software development, and IT support services in Polokwane. We provide innovative tech solutions to help your business grow.">
+    <meta name="author" content="Mabeba Tech-Solutions">
+    <meta name="keywords" content="Mabeba Tech, Web Development, IT Solutions, Polokwane, Mobile Apps, Software Development, Tech Support">
+    <title>Tech-Solutions</title>
 
+    <link rel="stylesheet" href="Tech-solutions.css">
+     <!-- MAIN JS -->
+    <script src="Tech-solutions.js" defer></script>
+    <!-- PARTICLES BACKGROUND -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js" defer></script>
+
+    
 </head>
 <body>
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
     <header>
         <nav class="navbar">
-    <a href="#home" class="logo">
-        <img src="mabeba-logo.png" alt="Mabeba Tech-Solutions Logo">
-    </a>
-    <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-    <ul class="nav-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
+            <a href="#home" class="logo">
+                <img src="mabeba-logo.png" alt="Mabeba Tech-Solutions Company Logo - Innovative Tech Solutions in Polokwane">
+            </a>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ================= HERO SECTION ================= -->
     <div id="tsparticles"></div>
-
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Welcome to Mabeba Tech-Solutions</h1>
@@ -42,8 +48,8 @@
         </div>
     </section>
 
-   <section id="services" class="services" data-animate="fade-in">
- 
+    <!-- ================= SERVICES SECTION ================= -->
+    <section id="services" class="services" data-animate="fade-in">
         <h2>Our Services</h2>
         <div class="service-cards">
             <div class="card">
@@ -64,38 +70,41 @@
             </div>
         </div>
     </section>
-<!-- About Section -->
+
+    <!-- ================= ABOUT SECTION ================= -->
     <section id="about" class="about" data-animate="fade-in">
         <h2>About Us</h2>
-        <p>Mabeba Tech-Solutions is founded by passionate Nchamabu Mabeba who aim to provide modern, efficient, and innovative tech solutions for individuals and businesses in Polokwane and beyond.</p>
+        <p>
+            Mabeba Tech-Solutions was founded by <strong>Nchamabu Mabeba</strong> with a passion for technology and innovation. 
+            We provide modern, efficient, and creative tech solutions for individuals and businesses in Polokwane and beyond.
+        </p>
     </section>
-<!-- Contact Section -->
-     <section id="contact" class="contact" data-animate="fade-in">
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="contact" data-animate="fade-in">
         <h2>Contact Us</h2>
-        <p>Phone: 0649489387</p>
+        <p>Phone: <a href="tel:0649489387">064 948 9387</a></p>
         <p>Email: <a href="mailto:nchamabugodfrey@gmail.com">nchamabugodfrey@gmail.com</a></p>
         <p>Location: POLOKWANE, BOTLOKWA MATSEKE 1204</p>
-        <form action="#" class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <form action="mailto:nchamabugodfrey@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+
             <button type="submit">Send Message</button>
         </form>
-     </section>
+    </section>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
     <footer>
         <p>&copy; 2025 Mabeba Tech-Solutions. All Rights Reserved.</p>
     </footer>
-    <!-- Mobile App Download Modal -->
-<div id="mobile-modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Download Our App</h2>
-    <p>It looks like you're on a mobile device! Get the Mabeba Tech-Solutions app for the best experience.</p>
-    <a href="https://example.com/app-download" class="btn">Download Now</a>
-  </div>
-</div>
 
 </body>
 </html>
